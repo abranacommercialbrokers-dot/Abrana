@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesInquiryForm = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-white font-sans">
+    <div className="flex items-center justify-center min-h-screen bg-white font-sans pt-32">
       <style>{`
         @keyframes hoverAnim {
           from { transform: translateZ(5px); }
@@ -23,19 +23,17 @@ const ServicesInquiryForm = () => {
           className="bg-[#e3f6f5] shadow-[inset_0_0_0_3px_#272343] p-8 rounded-lg [transform-style:preserve-3d] transition-all duration-200 space-y-6"
           style={{ animation: "hoverAnim 2s alternate infinite" }}
         >
-          {/* Heading */}
           <h2 className="text-3xl font-bold text-[#272343] text-center mb-6">
             Service Inquiry Form
           </h2>
 
           <form
-            action="https://api.sheetmonkey.io/form/2MNbbPsEqxzgPANiZaDQp8"
+            action="https://api.sheetmonkey.io/form/uQqoPWvGk2L69iWJPWMk6V"
             method="POST"
             className="space-y-6"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               
-              {/* Full Name */}
               <div>
                 <label className="uppercase font-bold text-[#272343] mb-1 block">
                   Full Name*
@@ -49,7 +47,6 @@ const ServicesInquiryForm = () => {
                 />
               </div>
 
-              {/* Email */}
               <div>
                 <label className="uppercase font-bold text-[#272343] mb-1 block">
                   Email*
@@ -63,7 +60,6 @@ const ServicesInquiryForm = () => {
                 />
               </div>
 
-              {/* Phone */}
               <div>
                 <label className="uppercase font-bold text-[#272343] mb-1 block">
                   Phone*
@@ -77,7 +73,6 @@ const ServicesInquiryForm = () => {
                 />
               </div>
 
-              {/* Service Selection */}
               <div>
                 <label className="uppercase font-bold text-[#272343] mb-1 block">
                   Select Service*
@@ -100,7 +95,6 @@ const ServicesInquiryForm = () => {
                 </select>
               </div>
 
-              {/* Insurance Type (Optional) */}
               <div>
                 <label className="uppercase font-bold text-[#272343] mb-1 block">
                   Insurance Type (If Applicable)
@@ -119,7 +113,6 @@ const ServicesInquiryForm = () => {
                 </select>
               </div>
 
-              {/* Tourism Type (Optional) */}
               <div>
                 <label className="uppercase font-bold text-[#272343] mb-1 block">
                   Tourism Service (If Applicable)
@@ -139,7 +132,6 @@ const ServicesInquiryForm = () => {
               </div>
             </div>
 
-            {/* Message */}
             <div>
               <label className="uppercase font-bold text-[#272343] mb-1 block">
                 Message / Service Details*
@@ -153,7 +145,6 @@ const ServicesInquiryForm = () => {
               ></textarea>
             </div>
 
-            {/* Submit */}
             <button
               type="submit"
               className="bg-[#bae8e8] hover:bg-[#9ccece] text-[#272343] font-bold px-6 py-3 rounded shadow-md transition w-full"
