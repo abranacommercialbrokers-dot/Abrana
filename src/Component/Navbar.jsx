@@ -15,7 +15,7 @@
 //   return (
 //     <header className="fixed top-0 left-0 w-full bg-white z-50 shadow-sm">
 //       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        
+
 //         {/* Logo Image */}
 //         <img
 //   src={logo}
@@ -69,7 +69,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        
+
         {/* Logo (Clickable to Home) */}
         <Link to="/">
           <img
@@ -86,8 +86,7 @@ export default function Navbar() {
               key={item.name}
               to={item.path}
               className={({ isActive }) =>
-                `relative group transition duration-300 hover:text-black ${
-                  isActive ? "text-black" : ""
+                `relative group transition duration-300 hover:text-black ${isActive ? "text-black" : ""
                 }`
               }
             >
@@ -101,13 +100,13 @@ export default function Navbar() {
 
         {/* Right Side (Desktop Only 1024px+) */}
         <div className="hidden lg:flex items-center">
-  <Link
-    to="/b"
-    className="bg-black text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-800 transition duration-300 shadow-md hover:shadow-lg"
-  >
-    Book Your Service
-  </Link>
-</div>
+          <Link
+            to="/b"
+            className="bg-black text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-800 transition duration-300 shadow-md hover:shadow-lg"
+          >
+            Book Your Service
+          </Link>
+        </div>
 
         {/* Mobile Hamburger (Below 1024px) */}
         <div className="lg:hidden">
@@ -131,8 +130,7 @@ export default function Navbar() {
                 to={item.path}
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
-                  `transition duration-300 hover:text-black ${
-                    isActive ? "text-black" : ""
+                  `transition duration-300 hover:text-black ${isActive ? "text-black" : ""
                   }`
                 }
               >
@@ -141,10 +139,14 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="flex gap-5 mt-4 text-sm">
-            <span className="cursor-pointer hover:text-black">Login</span>
-            <span className="cursor-pointer hover:text-black">Search</span>
-          </div>
+          <div className="hidden lg:flex items-center">
+          <Link
+            to="/b"
+            className="bg-black text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-800 transition duration-300 shadow-md hover:shadow-lg"
+          >
+            Book Your Service
+          </Link>
+        </div>
         </div>
       )}
     </header>
