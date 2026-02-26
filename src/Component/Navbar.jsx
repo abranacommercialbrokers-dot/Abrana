@@ -102,7 +102,7 @@ export default function Navbar() {
         {/* Right Side (Desktop Only 1024px+) */}
         <div className="hidden lg:flex items-center">
   <Link
-    to="/booking"
+    to="/b"
     className="bg-black text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-800 transition duration-300 shadow-md hover:shadow-lg"
   >
     Book Your Service
