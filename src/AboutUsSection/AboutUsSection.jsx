@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import img from "../Assets/about us.png"
 
 const AboutUsSection = () => {
@@ -73,10 +74,13 @@ const AboutUsSection = () => {
             </p>
 
             <div className="pt-4">
-              <button className="bg-[#1e5aa0] hover:bg-[#164a85] text-white px-8 py-2.5 rounded-md text-sm font-medium transition-colors duration-300">
-                Contact Us
-              </button>
-            </div>
+  <Link
+    to="/con"
+    className="inline-block bg-[#1e5aa0] hover:bg-[#164a85] text-white px-8 py-2.5 rounded-md text-sm font-medium transition-colors duration-300"
+  >
+    Contact Us
+  </Link>
+</div>
           </div>
         </div>
 
