@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import img1 from "../Assets/one.jpg"
 import img2 from "../Assets/two.jpg"
 
@@ -88,18 +89,22 @@ export default function Home() {
           {/* Bottom Insurance Bar */}
           <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-[92%] bg-gray-100 rounded-2xl px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
 
-            {["Travel Insurance", "For You and Your Family", "For your Business"].map(
-              (item, i) => (
-                <div key={i} className="flex items-center gap-4">
-                  <span className="font-medium text-gray-700">{item}</span>
-                  <button className="bg-pink-600 px-6 py-2 text-white rounded-full">
-                    Buy
-                  </button>
-                </div>
-              )
-            )}
+  {["Travel Insurance", "For You and Your Family", "For your Business"].map(
+    (item, i) => (
+      <div key={i} className="flex items-center gap-4">
+        <span className="font-medium text-gray-700">{item}</span>
 
-          </div>
+        <Link
+          to="/b"
+          className="bg-pink-600 px-6 py-2 text-white rounded-full hover:bg-pink-700 transition duration-300"
+        >
+          Buy
+        </Link>
+      </div>
+    )
+  )}
+
+</div>
         </div>
 
         {/* Floating Abu Dhabi Card */}
