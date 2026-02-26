@@ -75,7 +75,7 @@ export default function Navbar() {
           <img
             src={logo}
             alt="Logo"
-            className="w-32 h-auto cursor-pointer"
+            className="w-24 h-auto cursor-pointer"
           />
         </Link>
 
