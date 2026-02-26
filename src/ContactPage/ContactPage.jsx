@@ -294,28 +294,28 @@ const ContactPage = () => {
               <div className="bg-pink-500 p-3 rounded-full"><MapPin size={20} /></div>
               <div>
                 <h4 className="font-bold">HEAD OFFICE</h4>
-                <p className="text-gray-400 text-sm">Jln Cempaka Wangi No 22<br/>Jakarta - Indonesia</p>
+                <p className="text-gray-400 text-sm">Offices Block-B - Office No. 8C-11 - Residence 1072<br/>Al Muteena - Dubai - United Arab Emirates</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="bg-pink-500 p-3 rounded-full"><Mail size={20} /></div>
               <div>
                 <h4 className="font-bold">EMAIL SUPPORT</h4>
-                <p className="text-gray-400 text-sm">support@yourdomain.tld<br/>hello@yourdomain.tld</p>
+                <p className="text-gray-400 text-sm">abranacommercialbrokers@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="bg-pink-500 p-3 rounded-full"><Phone size={20} /></div>
               <div>
                 <h4 className="font-bold">LET'S TALK</h4>
-                <p className="text-gray-400 text-sm">Phone: +6221.2002.2012<br/>Fax: +6221.2002.2013</p>
+                <p className="text-gray-400 text-sm">Phone: 0554668913</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
               <div className="bg-pink-500 p-3 rounded-full"><Clock size={20} /></div>
               <div>
                 <h4 className="font-bold">WORKING HOURS</h4>
-                <p className="text-gray-400 text-sm">Monday - Friday<br/>07am - 09pm</p>
+                <p className="text-gray-400 text-sm">Monday - Saturday<br/>10am - 07pm</p>
               </div>
             </div>
           </div>
@@ -415,7 +415,7 @@ const ContactPage = () => {
       <section className="w-full h-[450px] mt-12 grayscale hover:grayscale-0 transition duration-500">
         <iframe
           title="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39723.13689728271!2d-0.127758!3d51.507351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c38c8cd1d9%3A0xb78f2474b9a45aa9!2sLondon!5e0!3m2!1sen!2suk!4v1700000000000"
+          src="google.com/maps?q=25.276981353759766,55.32792663574219&z=17&hl=en"
           className="w-full h-full border-none"
           allowFullScreen=""
           loading="lazy"
