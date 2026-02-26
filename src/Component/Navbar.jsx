@@ -60,10 +60,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const menu = [
-    { name: "Insurance Services", path: "/ins" },
-    { name: "Management Consultancy", path: "/c" },
-    { name: "E-commerce Facilitation", path: "/e" },
+    { name: "Insurance", path: "/ins" },
     { name: "Tourism & Leisure Consulting", path: "/t" },
+    { name: "Management", path: "/c" },
+    { name: "E-commerce", path: "/e" },
   ];
 
   return (
@@ -75,7 +75,7 @@ export default function Navbar() {
           <img
             src={logo}
             alt="Logo"
-            className="w-36 h-auto cursor-pointer"
+            className="w-32 h-auto cursor-pointer"
           />
         </Link>
 
