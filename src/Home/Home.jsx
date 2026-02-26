@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import img1 from "../Assets/one.jpg"
 import img2 from "../Assets/two.jpg"
 
