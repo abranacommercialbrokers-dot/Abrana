@@ -5,6 +5,7 @@ import InsCon from "./nav1/insCon"; // ✅ Capitalized component import
 import TravCon from './Nav2/travCon';
 import ConsConn from './nav3/ConsConn';
 import Econ from './nav4/Econ';
+import ServicesInquiryForm from './ServicesInquiryForm/ServicesInquiryForm';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="t" element={<TravCon/>} />
         <Route path="c" element={<ConsConn/>} />
         <Route path="e" element={<Econ/>} />
+        <Route path="b" element={<ServicesInquiryForm/>} />
         
         {/* <Route path="/home" element={<Home />} /> */}
       </Routes>
