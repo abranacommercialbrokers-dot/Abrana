@@ -7,11 +7,13 @@ import ConsConn from './nav3/ConsConn';
 import Econ from './nav4/Econ';
 import ServicesInquiryForm from './ServicesInquiryForm/ServicesInquiryForm';
 import ContactPage from './ContactPage/ContactPage';
+import ScrollToTop from './ScrollToTop/ScrollToTop';
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Navbar />
       <Routes>
         <Route path="/" element={<Connection />} />
