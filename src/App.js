@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Component/Navbar';
 import Connection from './Connection/Connection';
-import InsCon from "./nav1/insCon"; // ✅ Capitalized component import
+import InsCon from "./nav1/insCon";
 import TravCon from './Nav2/travCon';
 import ConsConn from './nav3/ConsConn';
 import Econ from './nav4/Econ';
@@ -15,17 +15,20 @@ function App() {
     <Router>
       <ScrollToTop/>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Connection />} />
-        <Route path="/ins" element={<InsCon />} /> {/* ✅ Capitalized component */}
-        <Route path="t" element={<TravCon/>} />
-        <Route path="c" element={<ConsConn/>} />
-        <Route path="e" element={<Econ/>} />
-        <Route path="b" element={<ServicesInquiryForm/>} />
-        <Route path="con" element={<ContactSection/>} />
-        
-        {/* <Route path="/home" element={<Home />} /> */}
-      </Routes>
+
+      {/* 🔥 This fixes navbar overlapping */}
+      <div className="pt-24">
+        <Routes>
+          <Route path="/" element={<Connection />} />
+          <Route path="/ins" element={<InsCon />} />
+          <Route path="/t" element={<TravCon/>} />
+          <Route path="/c" element={<ConsConn/>} />
+          <Route path="/e" element={<Econ/>} />
+          <Route path="/b" element={<ServicesInquiryForm/>} />
+          <Route path="/con" element={<ContactSection/>} />
+        </Routes>
+      </div>
+
     </Router>
   );
 }
