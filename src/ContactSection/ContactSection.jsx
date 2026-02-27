@@ -137,7 +137,7 @@ const ContactSection = () => {
 
         {/* RIGHT FORM */}
         <div className="bg-[#160a2c] p-10 rounded-2xl border border-gray-800 shadow-xl">
-          <h3 className="text-2xl font-bold mb-2">Send us a message</h3>
+          <h3 className="text-gray-400 text-2xl font-bold mb-2">Send us a message</h3>
           <p className="text-gray-400 mb-8 text-sm">
             Please feel free to send us any questions, feedback or suggestions you might have.
           </p>
