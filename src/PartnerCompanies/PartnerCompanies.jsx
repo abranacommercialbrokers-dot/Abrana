@@ -64,7 +64,7 @@ export default function PartnerCompanies() {
 
         {/* Description */}
         <p className="max-w-3xl mx-auto text-gray-600 text-base md:text-lg mb-14 leading-relaxed">
-          Established in 1995, InsuranceMarket.ae stands as a beacon of trust
+          Established in 1995, Abrana Commercial Brokers stands as a beacon of trust
           and excellence in Dubai and the UAE insurance sector. With our
           esteemed partnerships and stellar reputation, we proudly present you
           with superior coverage options and exclusive benefits, guaranteeing
