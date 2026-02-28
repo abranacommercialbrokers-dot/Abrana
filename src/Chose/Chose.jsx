@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import img from "../Assets/img.jpg"
 
 const stats = [
@@ -25,7 +26,7 @@ const Chose = () => {
   return (
     <section className="w-full bg-gradient-to-r from-[#eef1f5] to-[#f7f9fb] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 grid lg:grid-cols-2 gap-10 items-center">
-        
+
         {/* LEFT CONTENT */}
         <div>
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -38,9 +39,12 @@ const Chose = () => {
             and peace of mind.
           </p>
 
-          <button className="bg-[#8B1E3F] hover:bg-[#741734] text-white px-6 py-3 rounded-full font-medium transition">
+          <Link
+            to="/ins"
+            className="bg-[#8B1E3F] hover:bg-[#741734] text-white px-6 py-3 rounded-full font-medium transition inline-block text-center"
+          >
             Read More
-          </button>
+          </Link>
 
           {/* STATS CARDS */}
           <div className="flex flex-col sm:flex-row gap-6 mt-16 relative">
