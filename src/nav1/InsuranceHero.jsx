@@ -21,7 +21,7 @@ export default function InsuranceHero() {
           
           {/* Breadcrumb */}
           <p className="text-sm md:text-base tracking-widest text-gray-500 uppercase mb-4">
-            INSURANCE SERVICES  /  CAR INSURANCE
+            INSURANCE SERVICES  /  INSURANCE
           </p>
 
           {/* Title */}
